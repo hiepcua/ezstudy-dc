@@ -1,0 +1,70 @@
+/* --------------- Welcome Page --------------- */
+.welcome-page {}
+.grade_version {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 20px 0;
+}
+.grade_version .item {
+	display: inline-block;
+	width: 20%;
+	margin: 0 15px;
+	text-align: center;
+}
+.grade_version .item .fa-book {
+	color: var(--blue);
+	margin: auto;
+}
+.grade_version .item a {
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid var(--borderColor);
+	box-shadow: 0px 1px 8px #ccc;
+	color: var(--mainColor);
+}
+.grade_version .item a.active {
+	border: 1px solid var(--hoverColor);
+	color: var(--hoverColor);
+}
+
+/* --------------- Lession Page --------------- */
+.dashboard-page {}
+.dashboard-page .main-title {
+	text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 24px;
+	text-align: center;
+    color: var(--mainColor);
+    margin-top: 20px;
+    margin-bottom: 20px;
+	position: relative;
+}
+.dashboard-page .main-title::before {
+	content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 2px;
+    width: 135px;
+    background: #ffc800;
+    transform: translate(-50%, 0);
+}
+.subject-list {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subject-list a{
+	font-size: 18px;
+    font-weight: 500;
+    padding: 8px 25px;
+	margin: 15px 10px 0;
+    border-radius: 25px;
+    border: 2px solid var(--blue);
+    background: var(--blue);
+    color: white;
+    transition: all .2s;
+}

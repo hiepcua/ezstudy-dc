@@ -1,0 +1,48 @@
+.math-tex{
+	font-size:18px;
+}
+.card-nv .nav-tabs-ctr a{
+	font-size:18px!important;
+	text-transform:inherit!important;
+	/*color:#333!important;*/
+	text-align:left!important;
+	margin-bottom:7px;
+}
+
+.card-item,.item-infomation,.category-card .item-subject,.card-subject .item-subject{
+	border: 1px solid #ccc!important;
+	background: #fff;
+}
+.owl-item .item > div,.item-group-exam{
+	border: 1px solid #ccc!important;
+	background: #fff;
+}
+.item-noti{
+    margin-bottom: 7px;
+    border: #ccc 1px solid;
+}
+.row-item .col-item .item > div{
+	border: #ccc 1px solid!important;
+
+}
+.lession-header{margin-bottom:15px;padding-bottom:15px; border-bottom:#ccc 1px solid;}
+.label-title{font-size:20px;}
+.lession-main .lession_list li{border:#ccc 1px solid;margin-bottom:7px;padding:15px}
+.lession-main .lession_list li .title, .lession-main .lession_list li .func{font-size:16px;}
+.lession-main .lession_list li .func{text-align:right;}
+
+.lession-detail .intro{ font-size:16px;}
+.lession-detail .intro ul, .lession-detail .intro ul > li,.lession-detail .intro p,.lession-detail .intro div{margin-bottom:15px; clear:both; text-align:justify;}
+.lession-detail img, .lession-detail table{max-width: 100%;}
+.lession-menu .units-list .unit.active a, .lession-menu .units-list .unit:hover a{font-size:}
+.lession-main .tabs_menu{margin-bottom:15px;}
+
+.item-exercise .cau{clear:both;display:block;font-size:18px;font-weight:bold;float:none;}
+.item-exercise .card{border:#ccc 1px solid;}
+.item-subject{
+	padding: 20px;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+	border-radius: 12px;
+}

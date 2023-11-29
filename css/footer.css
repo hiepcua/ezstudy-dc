@@ -1,0 +1,32 @@
+footer{
+	position: relative;
+	color: #fff;
+	padding-top: 40px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	background-color: #343434;
+	z-index: 1;
+}
+.footer-logo{
+	display: block;
+	margin-bottom: 30px;
+}
+.footer-logo>img{
+	max-width: 100%;
+}
+footer a{color: #fff;}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer ul li {
+    padding: 5px 0;
+}
+footer .item {
+    margin-top: 40px;
+}
+footer .item .name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

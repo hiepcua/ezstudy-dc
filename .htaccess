@@ -1,0 +1,128 @@
+RewriteEngine On
+
+# Member
+RewriteRule ^login/?$							index.php?com=member&task=login  [QSA]
+RewriteRule ^register/?$						index.php?com=member&task=register  [QSA]
+RewriteRule ^logout/?$ 	 						index.php?com=member&task=logout  [QSA]
+RewriteRule ^forgotpass/?$  					index.php?com=member&task=forgot  [QSA]
+RewriteRule ^user-info/profile/?$ 				index.php?com=member&task=profile  [QSA]
+RewriteRule ^user-info/changepass/?$  			index.php?com=member&task=changepass  [QSA]
+RewriteRule ^user-info/create-account/?$  		index.php?com=member&task=create_account  [QSA]
+RewriteRule ^user-info/link-account/?$  		index.php?com=member&task=link_account  [QSA]
+
+#mua gói dịch vụ
+RewriteRule ^buy-package/?$  					index.php?com=member&task=buy_package  [QSA]
+RewriteRule ^buy-package-2/([0-9A-Za-z]+)?$ 	index.php?com=member&task=buy_package_2&id=$1  [QSA]
+RewriteRule ^buy-package-3/([0-9A-Za-z\_]+)?$ 	index.php?com=member&task=buy_package_3&id=$1  [QSA]
+
+#đăng ký gói gia sư
+RewriteRule ^user-info/register-course/?$  		index.php?com=member&task=register_course  [QSA]
+
+#thao luan giua học sinh và giáo viên
+RewriteRule ^chat/?$  							index.php?com=chat&task=list  [QSA]
+RewriteRule ^chat/([0-9A-Za-z\-_.]+)?$  		index.php?com=chat&task=detail&id_question=$1  [QSA]
+
+
+# Lession
+RewriteRule ^lession-list/?$ 	 				index.php?com=lesson&task=list  [QSA]
+RewriteRule ^lession/([0-9A-Za-z\-_.]+)?$ 	 	index.php?com=lesson&task=monhoc&subject=$1  [QSA]
+RewriteRule ^lession-exam/?$ 	 				index.php?com=lesson&task=exam  [QSA]
+
+RewriteRule ^exam-detail/([0-9A-Za-z\-_.]+)?$ 	 				index.php?com=lesson&task=exam_detail&id=$1  [QSA]
+RewriteRule ^lession-detail/([0-9A-Za-z\-_.]+)?$ 	 			index.php?com=lesson&task=baihoc&id=$1  [QSA]
+RewriteRule ^lession-exercise/([0-9A-Za-z\-_.]+)?$ 	 			index.php?com=lesson&task=baihoc&id=$1&type=2 [QSA]
+RewriteRule ^lession-video/([0-9A-Za-z\-_.]+)?$ 	 			index.php?com=lesson&task=baihoc&id=$1&type=4[QSA]
+RewriteRule ^lession-video/([0-9A-Za-z\-_.]+)/([0-9A-Za-z\-_.]+)?$ 			index.php?com=lesson&task=baihoc&id=$1&video_id=$2&type=4[QSA]
+RewriteRule ^lession-exercise/([0-9A-Za-z\-_.]+)/([0-9A-Za-z\-_.]+)?$ 	 	index.php?com=lesson&task=baihoc&id=$1&exercise_id=$2&type=2 [QSA]
+RewriteRule ^lession-detail/luyentap/([0-9A-Za-z\-_.]+)?$ 	 	index.php?com=lesson&task=baihoc&id=$1&type=3 [QSA]
+# Notifi
+RewriteRule ^notifi/?$ 	 				index.php?com=notifi&task=list  [QSA]
+RewriteRule ^notifi/([0-9A-Za-z\-_.]+)?$ 	 	index.php?com=notifi&task=detail&id=$1  [QSA]
+
+
+# tool làm nhiệm vụ
+RewriteRule ^tool-exam/([0-9A-Za-z\-_.]+)?$ 	 		toolexam/index.php?exam_id=$1  [QSA]
+
+RewriteRule ^tool-work/([0-9A-Za-z\-_.]+)?$ 	 		tooltracnghiem/index.php?exam_id=$1&type=1  [QSA]
+RewriteRule ^tool-work-config/([0-9A-Za-z\-_.]+)?$ 	 	tooltracnghiem/index.php?exam_id=$1&type=1 [QSA]
+RewriteRule ^tool-example/([0-9A-Za-z\-_.]+)?$ 	 		tooltracnghiem/index.php?exam_id=$1&type=3  [QSA]
+RewriteRule ^review-work/([0-9A-Za-z\-_.]+)?$ 	 		tooltracnghiem/review.php?exam_id=$1&type=1&review=1  [QSA]
+RewriteRule ^review-work-config/([0-9A-Za-z\-_.]+)?$ 	tooltracnghiem/review.php?exam_id=$1&type=2&review=1 [QSA]
+
+#histories ez1,2,3
+RewriteRule ^histories/?$ 	 								index.php?com=member&task=histories  [QSA]
+RewriteRule ^histories/([0-9A-Za-z\-_.]+)?$ 	 			index.php?com=member&task=histories&content=$1  [QSA]
+RewriteRule ^list-packet-histories/?$ 	 					index.php?com=member&task=list_packet  [QSA]
+RewriteRule ^list-service/?$ 	 							index.php?com=member&task=list_service  [QSA]
+RewriteRule ^product-order/?$ 	 							index.php?com=member&task=product_order  [QSA]
+RewriteRule ^report/?$ 	 									index.php?com=report&task=report  [QSA]
+
+# dich vụ
+
+RewriteRule ^product/?$ 	 					index.php?com=product&task=list 
+
+
+
+# API
+RewriteRule ^api/login?$ 	 				api/member/login.php
+RewriteRule ^api/register?$ 	 				api/member/register.php
+RewriteRule ^api/active-account?$ 	 			api/member/active_account.php
+RewriteRule ^api/list-account?$ 	 			api/member/list_account.php
+RewriteRule ^api/update-profile?$ 	 			api/member/update.php
+RewriteRule ^api/change-pass?$ 	 				api/member/changepass.php
+RewriteRule ^api/get-bonus?$ 	 				api/member/get_star_diamond.php
+RewriteRule ^api/bonus-config?$ 	 			api/member/bonus_config.php
+
+
+# APP
+RewriteRule ^api/app/get_study_report?$ 	 	api/app/get_study_report.php
+RewriteRule ^api/app/learning_progress?$ 	 	api/app/learning_progress.php
+RewriteRule ^api/app/save_subject_to_learn?$ 	api/app/save_subject_to_learn.php
+RewriteRule ^api/app/get_list_subject_reg?$ 	api/app/get_list_subject_reg.php
+RewriteRule ^api/app/info_packet_member?$ 		api/app/info_packet_member.php
+RewriteRule ^api/app/bonus-config?$ 	 		api/app/bonus_config.php
+RewriteRule ^api/app/timeline-bonus?$ 	 		api/app/timeline_bonus.php
+RewriteRule ^api/app/changepass?$ 	 			api/app/changepass.php
+RewriteRule ^api/app/member-edit?$ 	 			api/app/member-edit.php
+
+RewriteRule ^api/app/add-bonus?$ 	 			api/app/add_bonus.php
+RewriteRule ^api/app/save-work?$ 	 			api/app/save-work.php
+
+
+
+
+<Ifmodule mod_php5.c>
+	php_value upload_max_filesize 20M
+	php_value max_execution_time  1000
+	php_value max_input_time  1000
+	php_value memory_limit  256M
+	php_value post_max_size  20M
+	php_flag register_globals  off
+	php_flag display_errors  on
+	php_flag file_uploads  on
+	php_flag log_errors  on
+	php_flag output_buffering  off
+	php_flag register_argc_argv  on
+	php_flag magic_quotes_gpc   off
+	php_flag magic_quotes_runtime  off
+	php_flag magic_quotes_sybase  off
+	php_flag mysql.allow_persistent  off
+	php_flag register_long_arrays  on
+	php_flag allow_url_fopen  on
+	php_flag cgi.force_redirect  on
+	php_flag enable_dl  on
+	php_flag safe_mode off
+</Ifmodule>
+
+#Bảo vệ file
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+# DISABLE CACHING
+<IfModule mod_headers.c>
+	Header set Cache-Control "no-cache, no-store, must-revalidate"
+	Header set Pragma "no-cache"
+	Header set Expires 0
+</IfModule>

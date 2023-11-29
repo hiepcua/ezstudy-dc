@@ -1,0 +1,432 @@
+/* --------------- Dashboard Page --------------- */
+/* --------------- Task list --------------- */
+.task-list {}
+.card-task {}
+.card-task .item {
+	border-radius: 8px;
+	background: var(--lightBlue);
+	text-align: center;
+	margin: 9px; padding: 0;
+    width: 31%;
+	position: relative;
+}
+.card-task .item .title {
+	height: 60px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.card-task .item .thumb { 
+	width: 100%; height: 200px; 
+	border-radius: 8px 8px 0 0;
+	border: 1px solid var(--lightBlue);
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+.card-task .item .thumb img { 
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+	margin: 0 auto; 
+	transition: all 0.2s; 
+}
+.card-task .item .thumb:hover img { zoom: 1.2}
+.card-task .item .subject { 
+	position: absolute;
+	top: -6px;
+    right: 10px;
+}
+.card-task .item .subject span {
+    position: relative;
+    display: block;
+    text-align: center;
+    background: var(--red);
+    color: #fff;
+    font-size: 13px;
+    line-height: 1;
+    padding: 9px 0px 0px;
+    border-top-right-radius: 4px;
+    width: 75px;
+}
+.card-task .item .subject span:before, 
+.card-task .item .subject span:after {
+    position: absolute;
+    content: "";
+}
+.card-task .item .subject span:before {
+    height: 6px;
+    width: 6px;
+    left: -6px;
+    top: 0;
+    background: #000;
+    border-radius: 8px 0px 0 0;
+}
+.card-task .item .subject:after {
+    position: absolute;
+    content: "";
+    width: 0; height: 0;
+	right: 0px;
+    border-left: 42px solid transparent;
+    border-right: 34px solid transparent;
+    border-top: 10px solid var(--red);
+}
+
+.card-task .item .btn_start {
+	background: var(--blue);
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.progress-list { 
+	overflow: hidden;
+	border: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+    padding: 10px 0 0px;
+    border-radius: 6px;
+}
+.progress-list .bar-item .name{ float: left; width: 25%;}
+.progress-list .bar-item .progress { float: left; width: 75%}
+
+.timeline {}
+.timeline .table-header {
+    background: #5bc0de;
+    color: white;
+    font-weight: bold;
+	overflow: hidden;
+}
+.timeline .table-item {
+    background: #e7e6e6;
+    cursor: pointer;
+	overflow: hidden;
+}
+.timeline .table-item:nth-child(odd) {
+    background: rgb(247, 247, 247);
+}
+.timeline .table-item:hover {
+    background: var(--lightBlue); 
+}
+.timeline .track, .timeline .entry {
+	float: left; width: 14%; 
+	overflow: hidden;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+}
+.timeline .track:first-child, 
+.timeline .entry:first-child {
+	width: 16%;
+}
+.timeline .track .active, .timeline .entry .active {
+	background: var(--orange); color: #333;
+}
+.timeline .heading, .timeline .done { padding: 6px 10px; display: list-item;} 
+.timeline .readmore {
+	font-size: 13px;
+    padding: 5px 8px;
+    margin: 0;
+    border: 0;
+}
+
+.modal-full .modal-body{
+	max-height: calc(100vh - 80px);
+	overflow-y: auto;
+}
+.modal-full .timeline .table-header {
+	margin-right: 12px;
+}
+.modal-full .timeline .track:first-child, 
+.modal-full .timeline .track:nth-child(2), 
+.modal-full .timeline .entry:first-child,
+.modal-full .timeline .entry:nth-child(2) {
+	width: 8% !important;
+}
+.modal-full .table th { text-align:center;}
+.modal-full .table .active{
+	background: var(--orange); color: #333;
+}
+.modal-full .table-bordered {
+	
+}
+.modal-full .table > thead > tr > th, 
+.modal-full .table>tbody>tr>td,
+.modal-full .table-bordered>tbody>tr>td, 
+.modal-full .table-bordered>tbody>tr>th, 
+.modal-full .table-bordered>tfoot>tr>td, 
+.modal-full .table-bordered>tfoot>tr>th, 
+.modal-full .table-bordered>thead>tr>td, 
+.modal-full .table-bordered>thead>tr>th {
+    border: 1px solid #fff;
+}
+
+
+/* --------------- Online Classes --------------- */
+.online_classes {}
+.online_item1 .card .card-block {padding: 10px;}
+.online_classes .main-title::before{
+	/*display: none;*/
+}
+.online_classes .main-title {
+	margin-top: 0px;
+	/*margin-bottom: 10px;*/
+}
+.online_item2 .main-desc {
+	font-size: 20px;
+    margin: 0;
+    padding: 0 0 15px;
+}
+.online_item2 .card .card-block {
+	overflow: unset;
+}
+.online_classes .main-title .number {
+	border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    background: var(--red);
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: super;
+    padding: 2px 0;
+}
+.online_classes .table-block {
+	font-size: 13px;
+}
+.online_classes .table-header {
+	background: #5bc0de;
+	color: white; font-weight: bold;
+}
+.online_classes .table-header .row,
+.online_classes .table-body .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.online_classes .table-header .row > div { padding: 5px;}
+.online_classes .table-body .row > div { padding: 5px;}
+.online_classes .table-item {
+    background: white;
+	cursor: pointer;
+}
+.online_classes .table-item.odd {
+    background: rgb(247, 247, 247);
+}
+.online_classes .table-item:hover {
+    background: var(--lightBlue); 
+}
+
+/* online slider */
+#online_slide .owl-controls {position: relative}
+#online_slide .owl-prev {
+	position: absolute;
+	top: -168px;
+    left: -50px;
+}
+#online_slide .owl-next {
+	position: absolute;
+	top: -168px;
+    right: -50px;
+}
+#online_slide .owl-controls .owl-page span { display: block}
+#online_slide .owl-controls .owl-buttons div {
+    color: #FFF;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #1f1f1f;
+}
+#online_slide .owl-controls .owl-buttons div .fa{
+	margin: 8px auto;
+}
+#online_slide .owl-controls .owl-page span {
+	background: var(--blue);
+}
+#online_slide .owl-item .item { padding: 10px; }
+#online_slide .owl-item .thumb { position: relative}
+#online_slide .owl-item .thumb .subject {
+	position: absolute;
+	bottom: 0; left: 0;
+	padding: 5px 10px;
+	color: white;
+	background: var(--red);
+	border-radius: 0 10px 0 0;
+	box-shadow: 0px 1px 3px #999;
+	font-size: 13px;
+}
+#online_slide .owl-item .title {
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+/* tuan nay cua ban - week report */
+.week-report {
+	display: flex;
+    justify-content: center;
+}
+.week-report .item {
+	border-radius: 4px;
+    margin: 15px 10px;
+    width: 23%;
+    padding: 20px 10px;
+	background: var(--lightBlue);
+}
+.week-report .item .fa {
+	color: var(--blue);
+	width: 30px;
+	margin-top: 5px;
+}
+.week-report .item .content {
+	width: 130px;
+}
+.week-report .item .number {
+	font-weight: 500;
+    font-size: 26px;
+}
+
+/* subject test */
+.subject_test {}
+.subject_test .test_list .item{
+	padding: 10px;
+	text-align: left;
+}
+.subject_test .subject_name{
+	margin-bottom: 10px;
+}
+.subject_test .test_name {
+	font-weight: 700;
+    font-size: 18px;
+	margin-bottom: 10px;
+	height: 60px;
+	overflow: hidden;
+}
+.subject_test .start_time,
+.subject_test .end_time, 
+.subject_test .number_question {
+	font-size: 14px;
+	border-top: 1px dashed #fff;
+    padding: 6px 0;
+}
+.subject_test .start_time span,
+.subject_test .end_time span, 
+.subject_test .number_question span {
+	font-weight: bold;
+}
+.subject_test .func {
+	margin: 15px auto;
+}
+
+/* Thanh tich */
+.box_diamond .btn_tab_select {
+    float: right;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 32px;
+    background: #e5e5e5;
+    line-height: 32px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.btn_tab_select a {
+    padding: 0;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    float: left;
+    width: 50%;
+	border-right: 1px solid #e5e5e5;
+}
+.btn_tab_select a:last-child {
+	border-right: 0;
+}
+.btn_tab_select a.active {
+    color: #fff;
+    background: var(--red);
+}
+.btn_tab_select a:hover {
+    color: #fff;
+    background: var(--orange);
+}
+.btn_tab_select span {
+    height: 32px;
+    width: 1px;
+    float: left;
+    background: #e5e5e5;
+}
+
+.box_diamond { padding: 0 !important;}
+.box_diamond .award .detail{ 
+	background: #fbfbfb;
+    padding: 10px;
+	overflow: hidden;
+}
+.box_diamond .award .number{
+	font-size: 18px;
+	padding: 0;
+	position: relative;
+	display: block;
+    margin: auto;
+	background: url(../images/icons/hexagon.png) no-repeat center center;
+	background-size: 80%;
+	color: white;
+	width: 50px;
+    height: 55px;
+}
+.box_diamond .award .number span {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* TOP 5 */
+.top_5 { padding: 10px 0 !important}
+.top_5 .item {
+	padding: 10px 5px; 
+	margin: 10px 0;
+	border-bottom: 1px dashed #ccc;
+	display: block;
+    overflow: hidden;
+}
+.top_5 .item:last-child {border-bottom: 0;}
+.top_5 .item .rank {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    float: left;
+    margin-right: 10px;
+}
+.top_5 .item .rank span {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+}
+.top_5 .item .info {
+	font-size: 13px;
+    float: left;
+}
+.top_5 .item .info .name {
+	font-weight: bold;
+    letter-spacing: -0.5px;
+}
+.top_5 .item .score {
+	float: right;
+	font-weight: bold;
+	color: var(--red);
+}
+
+/* môn học - subject */
+.card-subject {}
+.card-subject .btn { margin: 3px; }

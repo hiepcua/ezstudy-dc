@@ -1,0 +1,193 @@
+/*login*/
+.box_login .txt_title, .box_register .txt_title {
+		color: #232878;
+		font-size: 28px;
+		line-height: 42px;
+		align-items: center;
+		position: absolute;
+		max-width: 563px;
+		height: 84px;
+		left: 12px;
+		top: 106px;
+		font-weight: bold;
+	}
+	.box_login .inner-text, .box_register .inner-text {
+		color: #C5401A;
+	}
+	.caption {
+		position: relative;
+		font-family: Rounded Mplus 1c;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 40px;
+		line-height: 59px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #232878;
+		margin-bottom: 25px;
+	}
+
+	.caption::after {
+		background: url(../images/icons/line_caption.png) no-repeat top center;
+		width: 186px;
+		height: 9px;
+		bottom: -5px;
+		left: 26%;
+		transform: translate(-50%,0);
+		content: "";
+		display: block;
+		position: absolute;
+		text-align: center;
+	}
+	.img_logo {
+		display: block;
+		margin: 0 auto;
+	}
+	.btn_regis {color: #232878 !important; font-weight: bold;}
+	.btn_forgot {
+		text-decoration-line: underline;
+	}
+.form-group .style2-input {
+	height: 50px;
+    line-height: 56px;
+}
+.frmlogin .forget_pass {margin-top: 25px;}
+	
+
+/*end login*/
+
+/*register*/
+.box_type label{
+	min-width: 136px;
+	padding: 5px;
+	background: #FFFFFF;
+	box-shadow: 0px 12px 30px rgb(0 0 0 / 10%);
+	border-radius: 16px;
+	border: 2px solid #fff;
+}
+
+.box_type .left {
+
+	background: #0071BB;
+	border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-right: -10px;
+}
+.box_type .active{
+	border: 2px solid #E34214;
+    box-sizing: border-box;
+}
+.box_type .active .left {
+	background: #E34214;
+}
+
+.box_type img{
+	position: absolute;
+    top: 10px;
+    left: 11px;
+    width: 20px;
+}
+.box_type .txt-text{line-height: 44px;}
+.login-form input, .login-form select {
+	    background: #FFFFFF;
+    border: 1px solid rgba(12, 15, 65, 0.15);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.login-form #btn-process-regis {
+	font-weight: bold;
+    line-height: 30px;
+    border: none;
+    margin-bottom: 10px;
+    background: #E34214;
+    border-radius: 12px;
+}
+.color-blue {color: #232878}
+/*end register*/
+
+.update_now {
+	position: absolute;
+    bottom: 10px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 30px rgb(0 0 0 / 10%);
+    border-radius: 16px;
+    right: 15px;
+}
+.update_now p{
+	    padding: 0px 15px;margin-bottom: 0px;
+}
+.update_now .btn_update_now{
+	    background: #C5401A;
+    text-transform: uppercase;
+}
+
+
+.nav-tabs-ctr a {color: #232878 !important; }
+.content-nv .title-label {display: none;}
+/*responsive*/
+@media (min-width: 768px){
+	.user_menu li {width: 18%;}
+	
+}
+@media (max-width: 768px){
+	.caption {font-size: 24px;padding-left: 10px; padding-right: 10px;} 
+	.caption::after {position: absolute; left: 32%;}
+	.login-box {padding: 0px;}
+	.login-page {background: none;}
+	.box_type {margin-right: 10px;}
+	.login-form .form-group {padding-left: 10px; padding-right: 10px;}
+	.hidden-xs {display: none;}
+}
+/*end responsive*/
+
+.lession-page .card-subject .item-subject:hover {    border: 1px solid #00aeef !important;}
+.bg-white {background: #fff;}
+.item-group-exam .ic img {margin-bottom: 2px;}
+.item-group-exam .btn {
+	    background: #E34214;
+    border-color: #E34214;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.box_user {
+	background: #fff; overflow: hidden;
+	padding: 15px;
+	margin-bottom: 25px;
+	border-radius: 15px;
+}
+.user_menu {
+	background: #FFFFFF;
+box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.05);
+border-radius: 15px;
+margin-bottom: 25px;
+}
+.user_menu li {display: inline-block;position: relative;}
+.user_menu li.active::after {
+	background: url(../images/icons/line_caption1.png) no-repeat top center;
+	width: 185px;
+	height: 9px;
+	bottom: 5px;
+	left: 60px;
+	transform: translate(-50%,0);
+	content: "";
+	display: block;
+	position: absolute;
+	text-align: center;
+	background-size: 100px;
+}
+.user_menu li:last-child a{
+	color: #C5401A;
+}
+
+.home-box-course {background: #fff; padding: 20px ;}
+.footer {display: none !important;}
+.font-lg {font-size: 20px !important;}
+.list-comment {background: #fff;padding: 10px;}

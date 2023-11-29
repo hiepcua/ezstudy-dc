@@ -1,0 +1,235 @@
+/* --------------- Lession Page --------------- */
+.lession-page {}
+.lession-page .main-title {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 22px;
+	text-align: center;
+	color: var(--mainColor);
+	margin-top: 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.lession-page .main-title::before {
+	content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 2px;
+    width: 135px;
+    background: #ffc800;
+    transform: translate(-50%, 0);
+}
+/* POPUP CHANGE GRADE */
+.frm_change_grade { text-align: center}
+.frm_change_grade .item { 
+	margin: 10px;
+    width: 100px;
+}
+.frm_change_grade .grade_msg {
+	color: red;
+	transition: all .2s;
+}
+.frm_change_grade .grade_version .name {
+	border: 1px solid #ccc;
+	margin: 0 10px;
+    padding: 10px;
+    border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+}
+.frm_change_grade .grade_version .icon {
+	color: green;
+	position: absolute;
+	top: 0; right: 5px;
+	font-size: 22px;
+}
+.frm_change_grade .grade_version .active{
+	border: 1px solid green;
+}
+
+/* LESSION MENU */
+.lession-menu {}
+.lession-menu .select-lop {
+	/* width: 100%; */
+	/* height: 40px; */
+	background: #f9f9f9;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 1px solid #f2f2f2;
+	box-shadow: none;
+}
+.lession-menu .select-lop .card-block {
+	padding: 9px 10px 8px 10px;
+	/* margin-left: 10px; */
+	box-shadow: none;
+	/* background-color: #f9f9f9; */
+}
+.lession-menu .select-lop .fa {
+	float: left; width: 35px;
+	text-align: center;
+	font-size: 20px;
+    color: #666;
+	cursor: pointer;
+}
+.lession-menu .select-lop .fa:hover {
+	color: #222;
+}
+.lession-menu .select-lop .change-lop {
+	float: left;     
+	width: calc(100% - 70px);
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.lession-menu .select-lop .change-lop:hover { color: var(--blue);}
+.lession-menu .select-lop .icon_disable {
+	cursor: not-allowed;
+	color: #ccc;
+}
+
+.lession-menu .units-list {
+	padding: 0px 10px 10px 10px;
+}
+.lession-menu .units-list .unit {
+	display: block;
+	padding: 10px;
+	background: #f9f9f9;
+	border: 1px solid #f2f2f2;
+	margin-bottom: 5px;
+	color: var(--blue);
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	transition: 0.4s;
+	font-size: 14px;
+}
+.lession-menu .units-list .unit.active, 
+.lession-menu .units-list .unit:hover {
+	background-color: var(--blue) !important;
+    border: 1px solid #1f93f6;
+    color: white;
+}
+.lession-menu .units-list .unit.active a, 
+.lession-menu .units-list .unit:hover a{
+	color: white;
+	font-size: 14px;
+}
+.lession-menu .lession_list{
+	margin:0; padding: 0;
+}
+.lession-menu .lession_list li{
+	padding: 10px; display: block;
+	border-bottom: 1px dashed #ccc;
+}
+.lession-menu .lession_list li a {
+	color: #333; display: block;
+}
+.lession-menu .lession_list li a:hover {
+	color: var(--blue);
+}
+.lession-menu .lession_list li.active {
+	background: var(--lightBlue); 
+}
+.lession-menu .lession_list li.active a{
+	color: var(--blue);
+}
+
+.lession-menu .units-list .unit_title{
+	background-color: var(--blue) !important;
+    border: 1px solid #1f93f6;
+    color: white;
+}
+.lession-menu .units-list .unit_title a{
+    color: white;
+}
+.lession-menu .btn_back {
+	margin-bottom: 20px; display: block;
+	font-weight: bold;
+}
+
+.subject_others {text-align: center;}
+.subject_others .main-title { 
+	margin-top: 0;
+    margin-bottom: 25px;
+}
+.subject_others .btn-info {
+	margin: 5px;
+}
+
+/* LESSION MAIN */
+.lession-main h2.title {
+	font-size: 20px;
+	padding: 0;
+	margin: 10px 0 20px;
+}
+.lession-main .lession_list {
+	margin: 0; padding: 0;
+}
+.lession-main .lession_list li {
+	background: #f9f9f9;
+	padding: 10px;
+	display: block;
+	margin-bottom: 3px;
+    border-radius: 4px;
+	overflow: hidden;
+}
+.lession-main .lession_list li:hover {
+  background-color: var(--lightBlue); 
+}
+.lession-main .lession_list li a {color: #333}
+.lession-main .lession_list li a:hover {color: var(--blue); }
+.lession-main .lession_list li .title,
+.lession-main .lession_list li .func {
+	padding-left: 0; 
+	padding-right: 0; 
+}
+.lession-main .lession_list li .btn {
+	padding: 5px 8px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-size: 13px;
+}
+.lession-main .lession_list li .btn:hover {
+	background: var(--blue);
+	color: white;
+	border: 1px solid var(--blue);
+}
+
+.lession-main .tabs_menu {}
+.lession-main .tabs_menu a{
+	padding: 8px 25px;
+    margin: 0 10px;
+    border-radius: 25px;
+	background: #f5f5f5;
+	color: #333;
+	font-weight: bold;
+}
+.lession-main .tabs_menu a.active{
+	background: var(--blue);
+	color: white;
+}
+.navigation .pre-btn,.navigation .nxt-btn{
+	position: absolute; top: 50%; margin-top: -13px; z-index:9
+}
+.navigation {/* position: relative */}
+.navigation .title {margin-left: 100px;margin-right: 100px;font-size: 16px;font-weight: bold;text-align: center;}
+.navigation .pre-btn{
+	left: 0px
+}
+.navigation .nxt-btn{
+	right: 0px
+}
+.navigation .pre-btn a { margin-right: 20px;}
+#cbo_subject{width:150px}
+.lession-header{}
+.label-title{font-size: 18px;}
+.main-title{position: relative;}
+.main-title h1{ font-size: 20px}
+.main-title .print{position: absolute;right:0px;top: 3px;z-index:1;font-size: 14px;text-transform: none;}

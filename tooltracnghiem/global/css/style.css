@@ -1,0 +1,123 @@
+.box-action{position: fixed;right: 0px;width: 320px;top: 0px;bottom: 0px;z-index: 999;background-color: #eee;padding: 10px 15px;}
+.box-action .item-act{
+    background-color: #fff;
+    margin-bottom: 13px;
+    /* margin-top: 13px; */
+    padding: 10px 0px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    /* width: 25%; */
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    display: block;
+    text-align: center;
+}
+.item-act .label{ font-size: 20px; font-weight: bold; color: #222}
+.ctrl.active{background-color: red !important;}
+.info-test{border-bottom: 1px solid #f1f1f1; position: relative;}
+
+.notic-answer .color{width: 30px; height: 18px; float: left; margin-right: 6px}
+.notic-answer .red{background-color: red}
+.notic-answer .black{background-color: black}
+.item-question{min-height:360px; position: relative}
+
+.gr-submit{position: absolute;bottom: 0px;text-align:center;left: 0px;right: 0px;}
+.box-btn{text-align:right;}
+
+
+.box-action .item-act{/* border: 1px solid #fff; */}
+.box-action .item-act.active{background-color: #94e6bd;color: #fff;}
+.box-action .item-act.focus{background-color: #fda54b;/* border: 1px solid #337ab7; */color: #fff;}
+.btn-rs{text-align: center; margin-top: 15px;}
+.box-rs{text-align:center;padding-top: 128px;}
+.box-rs h4{margin-bottom: 22px;}
+.group-btn1{    
+	float: left;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    overflow: hidden;}
+.label-title{font-size: 18px;margin-top: 6px;float: left;color: #fff;margin-left: 50px;}
+.info-quiz{margin-top: 25px;margin-bottom: 15px;height: 34px;}
+.group-btn .btn1{}
+.group-btn .btn2{}
+.box-countdown{
+	background-color: #4b98d4;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	/* font-weight: bold; */
+	padding: 15px;
+	margin:-15px -15px 0px -15px;
+}
+.box-rs h5{}
+.box-rs h1{margin-bottom: 25px;font-size: 36px;font-weight: bold;color:red;}
+.content_quiz{margin-bottom:30px;}
+.content_quiz p{margin: 0 0 10px;}
+.list-quiz{margin-bottom:30px;}
+.list-quiz .item-q{
+	border:#ccc 1px solid; border-radius:6px; padding:15px; margin-bottom:15px; box-shadow: 0px 1px 0px #ccc;
+	display:flex;
+	cursor:pointer;
+}
+.list-quiz .item-q>input{margin-right:15px;}
+.list-quiz .item-q>.label-asw{margin-right:5px;}
+.list-quiz .item-true{color: red;font-weight: bold;}
+.list-quiz .item-false{text-decoration: line-through;color: #888;}
+.item-row{margin-right: -10px; margin-left: -10px}
+.item-col{padding-right: 10px; padding-left: 10px; width: 25%; display: inline-block;float: left}
+.box-action-footer1{background-color: #fff; border-top: 1px solid #d7d7d7; position: fixed; left:0px; top: 0px;bottom:0px; height:50px}
+@media(max-width: 767px){
+	.box-action{display:none;}
+	.box-item.info-test{background-color:#fafafa;padding: 10px 15px;margin-left: -15px;margin-right: -15px;}
+	.label-title{margin-top:0px; padding-top:10px;float:left}
+	.group-btn{float: right;}
+	.info-quiz{margin-top: 2px;}
+	.item-question{min-height: calc(100% - 195px);}
+}
+@media(min-width: 768px){
+	.nav-top .gr-box-btn{
+    margin-right: 319px;
+}
+	.container-fluid{padding: 0px 60px;}
+	#main{margin-right: 320px;margin-top: 63px;}
+	.info-test .notic-answer{position: absolute;bottom: 6px;right:0px;}
+	.item-question{min-height: calc(100% - 230px);padding-bottom: 20px;}
+}
+.page-exam{
+  height: 100vh; 
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.show-guide{border: 2px solid #ffc107; border-radius:4px;padding: 10px; padding-bottom: 30px; background-color: #fff;margin-bottom: 30px;}
+.tbl-modal{}
+.tbl-modal tr{}
+.tbl-modal tr td{
+    border: none !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+.modal-notic{width: 420px;}
+.tbl-modal .name{text-align: left}
+.tbl-modal .number{text-align: right}
+.modal-header{border: none; text-align: center;}
+.modal-notic .modal-body{background: url('../../global/nocomplete.svg') no-repeat top 16px center;background-size: 200px auto; padding-bottom: 15px}
+.nav-top{position: fixed;left:0px;right: 0px;top:0px;z-index:1;background-color: #389ef7;padding-top: 8px;padding-bottom: 8px;padding-left: 0px;}
+.nav-top .gr-box-btn{
+    float: right;
+}
+.nav-top #timer{color: #fff;float: left;margin-top: 3px;margin-bottom: 0px;}
+.item-question .form-control{min-height: 200px;box-shadow:none;margin-bottom: 30px;}
+.preloader {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('../loading.gif');
+   background-repeat: no-repeat; 
+   background-color: #FFF;
+   background-position: center;
+}
+.cke_browser_webkit{margin-bottom: 30px}
